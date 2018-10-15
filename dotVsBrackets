@@ -1,0 +1,36 @@
+var myPhone = {
+    make: "OnePlus",
+    model: "OnePlus 6",
+    warranty: 12,
+    colour: "mirror black",
+    ring: function(){
+        console.log("signature tune beep beep beep!")
+    }
+};
+
+//console.log(myPhone.model);
+
+//console.log(myPhone["make"]);
+
+
+// a function to print the properties and their values randomly
+
+function getProperty(){
+    var properties = ["make", "model", "warranty", "colour"];
+    var y = 4 * Math.random();
+    y = Math.floor(y);
+    var property = properties[y];
+    return property + "-" + myPhone[property];
+};
+
+console.log(getProperty());
+
+function getProperty2(){
+    var properties = ["make", "model", "warranty", "colour", "ring"];
+    var y = 5 * Math.random();
+    y = Math.floor(y);
+    var property = properties[y];
+    return property + "-" + myPhone[property];
+};
+
+console.log(getProperty2());
