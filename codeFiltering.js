@@ -64,7 +64,7 @@ $(function(){
         for(i=0; i< orange.length; i++){
             console.log('arindam'+orange[i]+i);
         }
-        
+       $('li').slice(2,3).css("background-color","red"); 
     });
 })
 
