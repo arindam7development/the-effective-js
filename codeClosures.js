@@ -37,3 +37,19 @@ function f(x){
 f(5);
 
 console.log(n());
+
+$(function(){
+    console.log('arindam'+'#');
+})
+
+$('#0').click(function(){
+    console.log('button 1 clicked');
+})
+
+
+$(':button').click(function(){
+    console.log($(this).attr('id'));
+    console.log('arindam clicked button '+$(this).attr('id'))
+})
+
+
