@@ -14,6 +14,7 @@ arindam(function(){
 //If i am trying to send a function
 
 arindam(function() {
+    //console.log("arindam")
     return "arindam"
 })
 
